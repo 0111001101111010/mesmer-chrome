@@ -1,6 +1,6 @@
 
-
 mesmer
 ------
 
-Adds realtime content interaction information to Facebook.
+Adds realtime content interaction UI to Facebook discussion threads.
+
