@@ -11,7 +11,7 @@
   */
   "app": {
     "background": {
-      "scripts": ["main.js"]
+      "scripts": ["background.js"]
     }
   },
   "icons": {
@@ -20,7 +20,11 @@
   "permissions": [
     "videoCapture"
   ],
+  "sandbox": {
+    "pages": ["sandboxed.html"]
+  }
   
+  /* Only allowed for extensions, not packaged apps
   "content_scripts": [
     {
       // Change 'matches' attribute to load content
@@ -35,4 +39,5 @@
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   // this is required to inject the trollface image into the page
   "web_accessible_resources": [ "/images/*" ]
+  */
 }
