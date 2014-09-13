@@ -3,6 +3,10 @@
   "name": "Mesmer",
   "version": "0.0.1",
   "description": "Enhances HH Facebook discussions with real-time interaction information.",
+  "browser_action": {
+    "default_icon": "fb.png",
+    "default_popup": "tracker.html"
+  },
   "content_scripts": [
     {
       // Change 'matches' attribute to load content
