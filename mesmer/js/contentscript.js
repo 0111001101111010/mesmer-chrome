@@ -8,14 +8,12 @@ function posts() {
 }
 
 function colorProminentPost() {
-
   // Find the element that is most prominent on this page.
   var candidate = null;
   var candidatePercent = 0;
   posts().each(function(index) {
     var percent = getPercentVisible(this);
     $(this).css('background-color', 'white');
-    console.log($(this).attr('id') + ': ' + percent);
     if (percent > candidatePercent) {
       candidate = $(this);
       candidatePercent = percent;

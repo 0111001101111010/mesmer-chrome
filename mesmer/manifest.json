@@ -3,28 +3,10 @@
   "name": "Mesmer",
   "version": "0.0.1",
   "description": "Enhances HH Facebook discussions with real-time interaction information.",
-  /*
   "browser_action": {
-    "default_icon": "fb.png",
-    "default_popup": "tracker.html"
+    "default_icon": "img/fb.png",
+    "default_popup": "html/tracker.html"
   },
-  */
-  "app": {
-    "background": {
-      "scripts": ["background.js"]
-    }
-  },
-  "icons": {
-    "128": "fb.png"
-  },
-  "permissions": [
-    "videoCapture"
-  ],
-  "sandbox": {
-    "pages": ["sandboxed.html"]
-  }
-  
-  // Only allowed for extensions, not packaged apps
   "content_scripts": [
     {
       // Change 'matches' attribute to load content
@@ -32,9 +14,8 @@
       "matches": [ "https://www.facebook.com/groups/hackathonhackers/*" ],
       "js": [ 
         "libs/jquery.min.js",
-        "contentscript.js"
+        "js/contentscript.js"
       ]
     }
-  ],
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  ]
 }
