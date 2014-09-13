@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "TrollFaces",
-  "version": "0.1.1",
-  "description": "Must turn Codegram team members pics into troll faces.",
+  "name": "Mesmer",
+  "version": "0.0.1",
+  "description": "Enhances HH Facebook discussions with real-time interaction information.",
   "content_scripts": [
     {
       // Change 'matches' attribute to load content
